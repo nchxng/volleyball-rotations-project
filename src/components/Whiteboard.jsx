@@ -53,7 +53,7 @@ const Whiteboard = ({ positions, showOpponents }) => {
     return (
         <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
             <Tldraw 
-                licenseKey={'tldraw-2030-11-17/WyI3aU1QcUwxQiIsWyIqLmFhZTMyMmQ0LnZvbGxleWJhbGwtcm90YXRpb25zLXByb2plY3QucGFnZXMuZGV2Il0sOSwiMjAzMC0xMS0xNyJd.zo1FzbSWVHu/36V+sa942shwahRKIIbuyx26Yq8js+Wn10jRBnExNLBovBXZ3dPceoOdFHUxf5LHxQ7j5j9+gA'}
+                licenseKey={'tldraw-2026-02-25/WyJrcDk3VlVUXyIsWyIqIl0sMTYsIjIwMjYtMDItMjUiXQ.4o8RR1BJlCE7tiB5C/eRwAT/ve9J8PPagMly9JLBPNST8GzSFlugqHsILR8wB1c55Mx6APhpuVMRgL2U8auBFA'}
                 key={`${canvasWidth}-${canvasHeight}-${showOpponents}`}
                 forceMobile
                 components={{

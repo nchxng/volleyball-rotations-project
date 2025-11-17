@@ -128,6 +128,17 @@ const Whiteboard = ({ positions, showOpponents }) => {
                         })
                     })
 
+                    // Lock aspect ratio and prevent resizing for all ellipse shapes
+                    Editor.sideEffects.registerBeforeChangeHandler('shape', (prev, next) => {
+                        if (next.type === 'geo' && next.props.geo === 'ellipse') {
+                            // If width or height changed, revert to previous size
+                            if (prev.props.w !== next.props.w || prev.props.h !== next.props.h) {
+                                return { ...next, props: { ...next.props, w: prev.props.w, h: prev.props.h } }
+                            }
+                        }
+                        return next
+                    })
+
                     const zoomX = canvasWidth / internalWidth;
                     const zoomY = canvasHeight / internalHeight;
                     const baseZoom = Math.min(zoomX, zoomY);

@@ -192,7 +192,7 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center text-white px-8 py-12 lg:py-0">
                     <div className="max-w-xl">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                            Volleyball Positions Planner
+                            Volleyball Rotations Planner
                         </h1>
                         <p className="text-base sm:text-lg lg:text-xl">
                             Drag and drop player markers on a virtual court. Visualize rotations, assign names, and plan lineups with ease.

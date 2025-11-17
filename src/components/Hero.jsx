@@ -105,7 +105,7 @@ const liberoPositions = {
     { pos: 'OPP', color: 'orange', x: 172.5, y: 376.5},
     { pos: 'MB2', color: 'green', x: 315, y: 376.5},
     { pos: 'OH1', color: 'yellow', x: 457.5, y: 376.5},
-    { pos: 'MB1', color: 'green', x: 15.625, y: 533.75},
+    { pos: 'MB1', color: 'green', x: 631.875, y: 533.75},
   ],
   '2': [
     { pos: 'OH1', color: 'yellow', x: 457.5, y: 533.75},
@@ -114,7 +114,7 @@ const liberoPositions = {
     { pos: 'OH2', color: 'yellow', x: 172.5, y: 376.5},
     {pos: 'OPP', color: 'orange', x: 315, y: 376.5},
     { pos: 'MB2', color: 'green', x: 457.5, y: 376.5},
-    { pos: 'MB1', color: 'green', x: 15.625, y: 533.75},
+    { pos: 'MB1', color: 'green', x: 631.875, y: 533.75},
   ],
   '3': [
     { pos: 'MB2', color: 'green', x: 457.5, y: 533.75},
@@ -132,7 +132,7 @@ const liberoPositions = {
     { pos: 'S', color: 'light-blue', x: 172.5, y: 376.5},
     {pos: 'MB1', color: 'green', x: 315, y: 376.5},
     { pos: 'OH2', color: 'yellow', x: 457.5, y: 376.5},
-    { pos: 'MB2', color: 'green', x: 15.625, y: 533.75},
+    { pos: 'MB2', color: 'green', x: 631.875, y: 533.75},
   ],
   '5': [
     // 1
@@ -147,7 +147,7 @@ const liberoPositions = {
     {pos: 'S', color: 'light-blue', x: 315, y: 376.5},
     // 2
     { pos: 'MB1', color: 'green', x: 457.5, y: 376.5},
-    { pos: 'MB2', color: 'green', x: 15.625, y: 533.75},
+    { pos: 'MB2', color: 'green', x: 631.875, y: 533.75},
   ],
   '6': [
     // 1
@@ -192,7 +192,7 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center text-white px-8 py-12 lg:py-0">
                     <div className="max-w-xl">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                            Volleyball Rotations Planner
+                            Volleyball Positions Planner
                         </h1>
                         <p className="text-base sm:text-lg lg:text-xl">
                             Drag and drop player markers on a virtual court. Visualize rotations, assign names, and plan lineups with ease.

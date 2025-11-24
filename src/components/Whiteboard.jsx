@@ -53,7 +53,7 @@ const Whiteboard = ({ positions, showOpponents }) => {
     return (
         <div ref={containerRef} style={{ width: '100%', height: '100%' }}>
             <Tldraw 
-                licenseKey={'tldraw-2026-02-25/WyJrcDk3VlVUXyIsWyIqIl0sMTYsIjIwMjYtMDItMjUiXQ.4o8RR1BJlCE7tiB5C/eRwAT/ve9J8PPagMly9JLBPNST8GzSFlugqHsILR8wB1c55Mx6APhpuVMRgL2U8auBFA'}
+                licenseKey={'tldraw-2030-11-24/WyJVUlZEemJBbiIsWyIqLmFhZTMyMmQ0LnZvbGxleWJhbGwtcm90YXRpb25zLXByb2plY3QucGFnZXMuZGV2IiwiKi52b2xsZXliYWxsLXJvdGF0aW9ucy1wcm9qZWN0LnBhZ2VzLmRldiJdLDksIjIwMzAtMTEtMjQiXQ.CTPki6B9SHEnE6UQa/0uExGPlnU+tGvTj2ijagbCwyAFOfMLH4MIhsHXkQkZ/WAmudiQyNFnTDFnB8P6MJcG9Q'}
                 key={`${canvasWidth}-${canvasHeight}-${showOpponents}`}
                 forceMobile
                 components={{
@@ -149,7 +149,7 @@ const Whiteboard = ({ positions, showOpponents }) => {
                     const offsetY = -(internalHeight - canvasHeight / zoom) / 2;
                     
                     Editor.setCamera({ x: offsetX, y: offsetY, z: zoom }, { animation: { duration: 0 } })
-                    Editor.setCameraOptions({isLocked: true})
+                    Editor.setCameraOptions({isLocked: false})
                 }}
             />
         </div>
